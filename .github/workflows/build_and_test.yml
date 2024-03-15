@@ -1,6 +1,5 @@
 name: Build and Test
 
-
 on:
   push:
     branches: [ "main" ]
@@ -29,3 +28,5 @@ jobs:
       run: npm install
     - name: Run tests
       run: npm test
+    - name: Run security tests
+      run: npm audit
